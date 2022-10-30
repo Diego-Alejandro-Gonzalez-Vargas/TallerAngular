@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col">
+    <table class="table">
+      <thead>
+        <tr >
+          <th class="h4">ID</th>
+          <th class="h4"> NAME</th>
+          <th class="h4">CHANNEL</th>
+          <th class="h4">SEASONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of series"  style="background-color: lightgray">
+          <td>
+            <dd>{{ c.id }}</dd>
+          </td>
+          <td>
+            <dd>{{ c.name }}</dd>
+          </td>
+          <td>
+            <dd>{{ c.channel }}</dd>
+          </td>
+          <td>
+            <dd>{{ c.seasons }}</dd>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dd>{{'PROMEDIO DE SEASONS  '+ promedio}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
